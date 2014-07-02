@@ -4,6 +4,10 @@ Fraction::Fraction(const fraction_type numerator,
                    const fraction_type denominator)
     throw (DivisionByZero)
 {
+    if(denominator == 0)
+    {
+        throw DivisionByZero();
+    }
     numerator_ = numerator;
     denominator_ = denominator;
 }
