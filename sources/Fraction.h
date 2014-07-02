@@ -3,7 +3,12 @@
 
 class Fraction
 {
-    
+    int numerator_;
+    int denominator_;
+public:
+    Fraction();
+    int getNumerator();
+    int getDenominator();
 };
 
 #endif	/* FRACTION_H */
