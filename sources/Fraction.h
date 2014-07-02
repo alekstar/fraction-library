@@ -5,7 +5,10 @@ class Fraction
 {
     int numerator_;
     int denominator_;
-public:
+    
+    int getDefaultNumerator() const;
+    int getDefaultDenominator() const;
+public:    
     Fraction();
     int getNumerator();
     int getDenominator();

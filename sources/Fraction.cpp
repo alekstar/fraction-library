@@ -2,8 +2,8 @@
 
 Fraction::Fraction()
 {
-    numerator_ = 0;
-    denominator_ = 1;
+    numerator_ = getDefaultNumerator();
+    denominator_ = getDefaultDenominator();
 }
 
 int Fraction::getNumerator()
@@ -14,4 +14,14 @@ int Fraction::getNumerator()
 int Fraction::getDenominator()
 {
     return denominator_;
+}
+
+int Fraction::getDefaultNumerator() const
+{
+    return 0;
+}
+
+int Fraction::getDefaultDenominator() const
+{
+    return 1;
 }
