@@ -2,6 +2,7 @@
 
 Fraction::Fraction(const fraction_type numerator, 
                    const fraction_type denominator)
+    throw (DivisionByZero)
 {
     numerator_ = numerator;
     denominator_ = denominator;
