@@ -14,3 +14,8 @@ TEST(Constructor, ShouldConstructFraction1by2)
     EXPECT_EQ(1, fraction.getNumerator());
     EXPECT_EQ(2, fraction.getDenominator());
 }
+
+TEST(Constructor, ShouldThrowExceptionDivisionByZero)
+{
+    EXPECT_THROW(Fraction(1, 0), DivisionByZero);
+}
