@@ -1,27 +1,28 @@
 #include "Fraction.h"
 
-Fraction::Fraction()
+Fraction::Fraction(const fraction_type numerator, 
+                   const fraction_type denominator)
 {
-    numerator_ = getDefaultNumerator();
-    denominator_ = getDefaultDenominator();
+    numerator_ = numerator;
+    denominator_ = denominator;
 }
 
-int Fraction::getNumerator()
+fraction_type Fraction::getNumerator() const
 {
     return numerator_;
 }
 
-int Fraction::getDenominator()
+fraction_type Fraction::getDenominator() const
 {
     return denominator_;
 }
 
-int Fraction::getDefaultNumerator() const
+fraction_type Fraction::getDefaultNumerator()
 {
     return 0;
 }
 
-int Fraction::getDefaultDenominator() const
+fraction_type Fraction::getDefaultDenominator()
 {
     return 1;
 }
