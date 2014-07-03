@@ -36,7 +36,20 @@ TEST(Constructor, ShouldConstruct7by7)
     EXPECT_EQ(7, fraction.getDenominator());
 }
 
+TEST(SetNumerator, ShouldSetNumeratorTo3)
 {
+    Fraction fraction;
+    fraction.setNumerator(3);
+    EXPECT_EQ(3, fraction.getNumerator());
+    EXPECT_EQ(1, fraction.getDenominator());
+}
+
+TEST(SetNumerator, ShouldSetNumeratorTo0)
+{
+    Fraction fraction;
+    fraction.setNumerator(0);
+    EXPECT_EQ(0, fraction.getNumerator());
+    EXPECT_EQ(1, fraction.getDenominator());
 }
 
 //TEST(Addition, ResultShouldBe2by2)
