@@ -21,6 +21,7 @@ namespace FractionLibrary
         fraction_type getNumerator() const;
         fraction_type getDenominator() const;
         void setNumerator(const fraction_type numerator);
+        void setDenominator(const fraction_type denominator);
     };
 }
 

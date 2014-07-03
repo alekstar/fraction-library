@@ -38,3 +38,8 @@ void Fraction::setNumerator(const fraction_type numerator)
 {
     numerator_ = numerator;
 }
+
+void Fraction::setDenominator(const fraction_type denominator)
+{
+    denominator_ = denominator;
+}
