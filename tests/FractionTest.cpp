@@ -68,6 +68,13 @@ TEST(SetDenominator, ShouldSetDenominatorTo3)
     EXPECT_EQ(3, fraction.getDenominator());
 }
 
+TEST(SetDenominator, ShouldThrowAnExceptionDivisionByZero)
+{
+    Fraction fraction(2, 5);
+    EXPECT_THROW(fraction.setDenominator(0), DivisionByZero);
+    
+}
+
 //TEST(Addition, ResultShouldBe2by2)
 //{
 //    Fraction operand1(1, 2);
