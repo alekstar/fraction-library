@@ -33,3 +33,8 @@ fraction_type Fraction::getDefaultDenominator()
 {
     return 1;
 }
+
+void Fraction::setNumerator(const fraction_type numerator)
+{
+    numerator_ = numerator;
+}
