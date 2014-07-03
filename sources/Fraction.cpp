@@ -40,6 +40,11 @@ void Fraction::setNumerator(const fraction_type numerator)
 }
 
 void Fraction::setDenominator(const fraction_type denominator)
+    throw(DivisionByZero)
 {
+    if(denominator == 0)
+    {
+        throw DivisionByZero();
+    }
     denominator_ = denominator;
 }
