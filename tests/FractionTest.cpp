@@ -26,3 +26,10 @@ TEST(Constructor, ShouldConstructFraction5by3)
     EXPECT_EQ(5, fraction.getNumerator());
     EXPECT_EQ(3, fraction.getDenominator());
 }
+
+TEST(Constructor, ShouldConstruct7by7)
+{
+    Fraction fraction(7, 7);
+    EXPECT_EQ(7, fraction.getNumerator());
+    EXPECT_EQ(7, fraction.getDenominator());
+}
