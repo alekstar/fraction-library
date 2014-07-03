@@ -1,6 +1,8 @@
 #include <gtest/gtest.h>
 #include "sources/Fraction.h"
 
+using namespace FractionLibrary;
+
 TEST(Constructor, ShouldConstructFraction0by1)
 {
     Fraction fraction;
