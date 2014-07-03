@@ -60,6 +60,14 @@ TEST(SetNumerator, ShouldSetNumeratorToMinus5)
     EXPECT_EQ(7, fraction.getDenominator());
 }
 
+TEST(SetDenominator, ShouldSetDenominatorTo3)
+{
+    Fraction fraction(2, 5);
+    fraction.setDenominator(3);
+    EXPECT_EQ(2, fraction.getNumerator());
+    EXPECT_EQ(3, fraction.getDenominator());
+}
+
 //TEST(Addition, ResultShouldBe2by2)
 //{
 //    Fraction operand1(1, 2);
