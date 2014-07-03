@@ -75,6 +75,14 @@ TEST(SetDenominator, ShouldThrowAnExceptionDivisionByZero)
     
 }
 
+TEST(SetDenominator, ShouldSetDenominatorToMinus100)
+{
+    Fraction fraction(2, 5);
+    fraction.setDenominator(-100);
+    EXPECT_EQ(2, fraction.getNumerator());
+    EXPECT_EQ(-100, fraction.getDenominator());
+}
+
 //TEST(Addition, ResultShouldBe2by2)
 //{
 //    Fraction operand1(1, 2);
