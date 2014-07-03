@@ -55,8 +55,8 @@ TEST(SetNumerator, ShouldSetNumeratorTo0)
 TEST(SetNumerator, ShouldSetNumeratorToMinus5)
 {
     Fraction fraction(10, 7);
-    fraction.setNumerator(5);
-    EXPECT_EQ(5, fraction.getNumerator());
+    fraction.setNumerator(-5);
+    EXPECT_EQ(-5, fraction.getNumerator());
     EXPECT_EQ(7, fraction.getDenominator());
 }
 
