@@ -19,3 +19,10 @@ TEST(Constructor, ShouldThrowExceptionDivisionByZero)
 {
     EXPECT_THROW(Fraction(1, 0), DivisionByZero);
 }
+
+TEST(Constructor, ShouldConstructFraction5by3)
+{
+    Fraction fraction(5, 3);
+    EXPECT_EQ(5, fraction.getNumerator());
+    EXPECT_EQ(3, fraction.getDenominator());
+}
