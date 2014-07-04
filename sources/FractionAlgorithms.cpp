@@ -92,6 +92,6 @@ namespace FractionLibrary
     
     const Fraction operator-(const Fraction& fraction)
     {
-        return Fraction(-fraction.getNumerator(), -fraction.getDenominator());
+        return Fraction(-fraction.getNumerator(), fraction.getDenominator());
     }
 }
