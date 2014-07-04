@@ -84,7 +84,8 @@ namespace FractionLibrary
         if((fraction.getNumerator() < 0 && fraction.getDenominator() < 0) ||
             fraction.getNumerator() >= 0 && fraction.getDenominator() < 0)
         {
-            return -fraction;
+            return Fraction(-fraction.getNumerator(), 
+                            -fraction.getDenominator());
         }
         return fraction;
     }
