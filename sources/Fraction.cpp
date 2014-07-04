@@ -76,6 +76,9 @@ namespace FractionLibrary
     const bool operator==(const Fraction& left_operand, 
                           const Fraction& right_operand)
     {
-        return true;
+        return ((left_operand.getNumerator() == 
+                    right_operand.getNumerator()) && 
+                 left_operand.getDenominator() == 
+                    right_operand.getDenominator());
     }
 }
