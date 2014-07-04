@@ -91,3 +91,12 @@ TEST(OperatorPlus, ResultShouldBe2by2)
     EXPECT_EQ(2, result.getNumerator());
     EXPECT_EQ(2, result.getDenominator());
 }
+
+TEST(OperatorPlus, ResultShoulBe17By12)
+{
+    Fraction operand1(2, 3);
+    Fraction operand2(3, 4);
+    Fraction result = operand1 + operand2;
+    EXPECT_EQ(17, result.getNumerator());
+    EXPECT_EQ(12, result.getDenominator());
+}
