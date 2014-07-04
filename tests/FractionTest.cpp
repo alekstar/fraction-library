@@ -92,7 +92,7 @@ TEST(OperatorPlus, ResultShouldBe2by2)
     EXPECT_EQ(2, result.getDenominator());
 }
 
-TEST(OperatorPlus, ResultShoulBe17By12)
+TEST(OperatorPlus, ResultShouldBe17By12)
 {
     Fraction operand1(2, 3);
     Fraction operand2(3, 4);
