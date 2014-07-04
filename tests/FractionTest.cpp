@@ -83,7 +83,7 @@ TEST(SetDenominator, ShouldSetDenominatorToMinus100)
     EXPECT_EQ(-100, fraction.getDenominator());
 }
 
-TEST(Addition, ResultShouldBe2by2)
+TEST(OperatorPlus, ResultShouldBe2by2)
 {
     Fraction operand1(1, 2);
     Fraction operand2(1, 2);
