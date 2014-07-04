@@ -132,8 +132,9 @@ namespace FractionLibrary
         if((fraction.getNumerator() < 0 && fraction.getDenominator() < 0) ||
             fraction.getNumerator() >= 0 && fraction.getDenominator() < 0)
         {
-            Fraction result(-fraction);
+            return -fraction;
         }
+        return fraction;
     }
     
     const Fraction operator-(const Fraction& fraction)
