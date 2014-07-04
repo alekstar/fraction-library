@@ -142,3 +142,23 @@ TEST(OperatorEqual, 1By2And2By4ShouldBeEqual)
 {
     EXPECT_EQ(Fraction(1, 2), Fraction(2, 4));
 }
+
+TEST(OperatorEqual, Minus1ByMinus2And1By2ShouldBeEqual)
+{
+    EXPECT_TRUE(Fraction(-1, -2) == Fraction(1, 2));
+}
+
+TEST(getWithReducedSign, ReducedMinus1ByMinus2ShouldBeEqualTo1By2)
+{
+    EXPECT_EQ(getWithReducedSign(Fraction(-1, -2)), Fraction(1, 2));
+}
+
+TEST(getReduced, ReducedMinus1ByMinus2ShouldBeEqualTo1By2)
+{
+    EXPECT_EQ(getReduced(Fraction(-1, -2)), Fraction(1, 2));
+}
+
+TEST(getReduced, Reduced1By2ShouldBeEqualTo1By2)
+{
+    EXPECT_EQ(Fraction(1, 2), getReduced(Fraction(1, 2)));
+}
