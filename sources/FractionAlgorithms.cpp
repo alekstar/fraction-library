@@ -94,4 +94,10 @@ namespace FractionLibrary
     {
         return Fraction(-fraction.getNumerator(), fraction.getDenominator());
     }
+    
+    const Fraction operator-(const Fraction& left_operand, 
+                             const Fraction& right_operand)
+    {
+        return left_operand + (-right_operand);
+    }
 }

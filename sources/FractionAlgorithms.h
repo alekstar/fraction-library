@@ -8,6 +8,8 @@ namespace FractionLibrary
     const Fraction operator+(const Fraction& left_operand, 
                              const Fraction& right_operand);
     const Fraction operator-(const Fraction& fraction);
+    const Fraction operator-(const Fraction& left_operand, 
+                             const Fraction& right_operand);
     const bool operator==(const Fraction& left_operand, 
                           const Fraction& right_operand);
     const fraction_type defineCommonDenominator(const fraction_type operand1,
