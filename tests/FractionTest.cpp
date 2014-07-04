@@ -135,6 +135,15 @@ TEST(OperatorPlus, MustBeCommutative)
     EXPECT_EQ(operand1 + operand2, operand2 + operand1);
 }
 
+TEST(OperatorPlus, MustBeAssociative)
+{
+    Fraction operand1(15, -1345);
+    Fraction operand2(16, 1);
+    Fraction operand3(17, 17);
+    EXPECT_EQ((operand1 + operand2) + operand3, 
+              operand1 + (operand2 + operand3));
+}
+
 TEST(OperatorEqual, 1By2And1By2ShouldBeEqual)
 {
     EXPECT_EQ(Fraction(1, 2), Fraction(1, 2));
