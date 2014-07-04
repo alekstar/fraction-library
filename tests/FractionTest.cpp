@@ -132,3 +132,8 @@ TEST(OperatorEqual, 1By2And1By2ShouldBeEqual)
 {
     EXPECT_EQ(Fraction(1, 2), Fraction(1, 2));
 }
+
+TEST(OperatorEqual, 1By2And2By3ShouldNotBeEqual)
+{
+    EXPECT_FALSE(Fraction(1, 2) == Fraction(2, 3));
+}
