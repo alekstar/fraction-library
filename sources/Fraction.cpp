@@ -77,10 +77,24 @@ namespace FractionLibrary
     const bool operator==(const Fraction& left_operand, 
                           const Fraction& right_operand)
     {
-        return ((left_operand.getNumerator() == 
-                    right_operand.getNumerator()) && 
-                 left_operand.getDenominator() == 
-                    right_operand.getDenominator());
+        if ((left_operand.getNumerator() == 
+                right_operand.getNumerator()) && 
+             left_operand.getDenominator() == 
+                right_operand.getDenominator())
+        {
+            return true;
+        }
+        Fraction reduced_left_operand = getReduced(left_operand);
+        Fraction reduced_right_operand = getReduced(right_operand);
+        if((reduced_left_operand.getNumerator() == 
+                reduced_right_operand.getNumerator()) && 
+             reduced_left_operand.getDenominator() == 
+                reduced_right_operand.getDenominator())
+        {
+            return true;
+        }
+        return false;
+    }
     
     const fraction_type defineCommonDenominator(const fraction_type operand1,
                                                 const fraction_type operand2)
