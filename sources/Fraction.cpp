@@ -101,5 +101,17 @@ namespace FractionLibrary
         
         return number1 + number2;
     }
+    const Fraction getWithReducedSign(const Fraction& fraction)
+    {
+        if((fraction.getNumerator() < 0 && fraction.getDenominator() < 0) ||
+            fraction.getNumerator() >= 0 && fraction.getDenominator() < 0)
+        {
+            Fraction result(-fraction);
+        }
+    }
+    
+    const Fraction operator-(const Fraction& fraction)
+    {
+        return Fraction(-fraction.getNumerator(), -fraction.getDenominator());
     }
 }
