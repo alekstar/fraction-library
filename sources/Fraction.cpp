@@ -1,4 +1,5 @@
 #include "Fraction.h"
+#include <cmath>
 
 using namespace FractionLibrary;
 
