@@ -27,6 +27,8 @@ namespace FractionLibrary
     
     const Fraction operator+(const Fraction& operand1, 
                              const Fraction& operand2);
+    const bool operator==(const Fraction& operand1, 
+                          const Fraction& operand2);
 }
 
 #endif	/* FRACTION_H */

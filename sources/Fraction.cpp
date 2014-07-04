@@ -72,4 +72,10 @@ namespace FractionLibrary
         }
         return result;
     }
+    
+    const bool operator==(const Fraction& operand1, 
+                          const Fraction& operand2)
+    {
+        return true;
+    }
 }
