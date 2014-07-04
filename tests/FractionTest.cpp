@@ -1,5 +1,7 @@
 #include <gtest/gtest.h>
 #include "sources/Fraction.h"
+#include "sources/FractionAlgorithms.h"
+#include "sources/fraction_type.h"
 
 using namespace FractionLibrary;
 
