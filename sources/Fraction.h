@@ -25,8 +25,8 @@ namespace FractionLibrary
             throw (DivisionByZero);
     };
     
-    Fraction operator+(const Fraction& operand1, 
-                       const Fraction& operand2);
+    const Fraction operator+(const Fraction& operand1, 
+                             const Fraction& operand2);
 }
 
 #endif	/* FRACTION_H */

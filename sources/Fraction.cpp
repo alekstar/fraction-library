@@ -51,7 +51,8 @@ namespace FractionLibrary
         denominator_ = denominator;
     }
     
-    Fraction operator+(const Fraction& left_operand, const Fraction& right_operand)
+    const Fraction operator+(const Fraction& left_operand, 
+                             const Fraction& right_operand)
     {
         Fraction result;
         if(left_operand.getDenominator() == right_operand.getDenominator())
