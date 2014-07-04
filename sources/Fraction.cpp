@@ -10,8 +10,8 @@ Fraction::Fraction(const fraction_type numerator,
     {
         throw DivisionByZero();
     }
-    numerator_ = numerator;
-    denominator_ = denominator;
+    setNumerator(numerator);
+    setDenominator(denominator);
 }
 
 fraction_type Fraction::getNumerator() const
