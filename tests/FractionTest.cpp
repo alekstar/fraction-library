@@ -128,6 +128,13 @@ TEST(OperatorPlus, ResultShouldBe15By4)
     EXPECT_EQ(4, result.getDenominator());
 }
 
+TEST(OperatorPlus, MustBeCommutative)
+{
+    Fraction operand1(-14, 345);
+    Fraction operand2(17, 3);
+    EXPECT_EQ(operand1 + operand2, operand2 + operand1);
+}
+
 TEST(OperatorEqual, 1By2And1By2ShouldBeEqual)
 {
     EXPECT_EQ(Fraction(1, 2), Fraction(1, 2));
