@@ -100,3 +100,12 @@ TEST(OperatorPlus, ResultShouldBe17By12)
     EXPECT_EQ(17, result.getNumerator());
     EXPECT_EQ(12, result.getDenominator());
 }
+
+TEST(OperatorPlus, ResultShouldBeMinus1By12)
+{
+    Fraction operand1(2, 3);
+    Fraction operand2(-3, 4);
+    Fraction result = operand1 + operand2;
+    EXPECT_EQ(-1, result.getNumerator());
+    EXPECT_EQ(12, result.getDenominator());
+}
