@@ -127,3 +127,8 @@ TEST(OperatorPlus, ResultShouldBe15By4)
     EXPECT_EQ(15, result.getNumerator());
     EXPECT_EQ(4, result.getDenominator());
 }
+
+TEST(OperatorEqual, 1By2And1By2ShouldBeEqual)
+{
+    EXPECT_EQ(Fraction(1, 2), Fraction(1, 2));
+}
