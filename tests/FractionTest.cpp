@@ -118,3 +118,12 @@ TEST(OperatorPlus, ResultShouldBe11By4)
     EXPECT_EQ(11, result.getNumerator());
     EXPECT_EQ(4, result.getDenominator());
 }
+
+TEST(OperatorPlus, ResultShouldBe15By4)
+{
+    Fraction operand1(3, 4);
+    int operand2(3);
+    Fraction result = operand1 + operand2;
+    EXPECT_EQ(15, result.getNumerator());
+    EXPECT_EQ(4, result.getDenominator());
+}
