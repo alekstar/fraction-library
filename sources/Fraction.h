@@ -2,11 +2,10 @@
 #define	FRACTION_H
 
 #include "exceptions/DivisionByZero.h"
+#include "fraction_type.h"
 
 namespace FractionLibrary
 {
-    typedef int fraction_type;
-
     class Fraction
     {
         fraction_type numerator_;
