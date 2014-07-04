@@ -24,6 +24,9 @@ namespace FractionLibrary
         void setDenominator(const fraction_type denominator)
             throw (DivisionByZero);
     };
+    
+    Fraction operator+(const Fraction& operand1, 
+                       const Fraction& operand2);
 }
 
 #endif	/* FRACTION_H */
