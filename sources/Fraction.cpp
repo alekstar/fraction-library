@@ -101,6 +101,17 @@ namespace FractionLibrary
         
         return number1 + number2;
     }
+    
+    const Fraction getReduced(const Fraction& fraction)
+    {
+        int common_denominator = 
+            defineCommonDenominator(fraction.getNumerator(), 
+                                    fraction.getDenominator());
+        return getWithReducedSign(
+            Fraction(fraction.getNumerator() / common_denominator,
+                     fraction.getDenominator() / common_denominator));
+    }
+    
     const Fraction getWithReducedSign(const Fraction& fraction)
     {
         if((fraction.getNumerator() < 0 && fraction.getDenominator() < 0) ||

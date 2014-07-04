@@ -32,6 +32,7 @@ namespace FractionLibrary
                           const Fraction& right_operand);
     const fraction_type defineCommonDenominator(const fraction_type operand1,
                                                 const fraction_type operand2);
+    const Fraction getReduced(const Fraction& fraction);
     const Fraction getWithReducedSign(const Fraction& fraction);
 }
 
