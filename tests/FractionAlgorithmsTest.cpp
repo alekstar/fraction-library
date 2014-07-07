@@ -99,7 +99,7 @@ TEST(getReduced, Reduced1By2ShouldBeEqualTo1By2)
     EXPECT_EQ(Fraction(1, 2), getReduced(Fraction(1, 2)));
 }
 
-TEST(Addition, 1By2Minus1By4ShouldBeEqualTo1By4)
+TEST(OperatorMinus, 1By2Minus1By4ShouldBeEqualTo1By4)
 {
     EXPECT_EQ(Fraction(1, 4), Fraction(1, 2) - Fraction(1, 4));
 }
