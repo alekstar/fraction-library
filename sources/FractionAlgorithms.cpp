@@ -107,4 +107,14 @@ namespace FractionLibrary
     {
         return left_operand + (-right_operand);
     }
+    
+    const Fraction operator*(const Fraction& left_operand, 
+                             const Fraction& right_operand)
+    {
+        int result_numerator = 
+            left_operand.getNumerator() * right_operand.getNumerator();
+        int result_denominator = 
+            left_operand.getDenominator() * right_operand.getDenominator();
+        return Fraction(result_numerator, result_denominator);
+    }
 }
