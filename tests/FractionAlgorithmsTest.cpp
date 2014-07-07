@@ -133,3 +133,8 @@ TEST(defineGreatestCommonDivisor, 3And5ShouldReturn1)
 {
     EXPECT_EQ(1, defineGreatestCommonDivisor(3, 5));
 }
+
+TEST(operatorNotEqual, 1By2NotEqualTo1By3)
+{
+    EXPECT_TRUE(Fraction(1, 2) != Fraction(1, 3));
+}
