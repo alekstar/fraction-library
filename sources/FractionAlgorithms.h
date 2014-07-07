@@ -12,6 +12,8 @@ namespace FractionLibrary
                              const Fraction& right_operand);
     const Fraction operator*(const Fraction& left_operand, 
                              const Fraction& right_operand);
+    const Fraction operator/(const Fraction& left_operand,
+                             const Fraction& right_operand);
     const bool operator==(const Fraction& left_operand, 
                           const Fraction& right_operand);
     const bool operator!=(const Fraction& left_operand, 
