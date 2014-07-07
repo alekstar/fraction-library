@@ -104,6 +104,11 @@ TEST(getReduced, Reduced12By48ShouldBeEqualTo1By4)
     EXPECT_EQ(Fraction(1, 4), getReduced(Fraction(12, 48)));
 }
 
+TEST(getReduced, ReducedMinus15By25ShouldBeEqualToMinus3By5)
+{
+    EXPECT_EQ(Fraction(3, 5), getReduced(Fraction(15, 25)));
+}
+
 TEST(OperatorMinus, 1By2Minus1By4ShouldBeEqualTo1By4)
 {
     EXPECT_EQ(Fraction(1, 4), Fraction(1, 2) - Fraction(1, 4));
