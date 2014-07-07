@@ -108,3 +108,8 @@ TEST(defineGreatestCommonDivisor, 5And10ShouldReturn5)
 {
     EXPECT_EQ(5, defineGreatestCommonDivisor(5, 10));
 }
+
+TEST(defineGreatestCommonDivisor, 10And15ShouldReturn5)
+{
+    EXPECT_EQ(5, defineGreatestCommonDivisor(10, 15));
+}
