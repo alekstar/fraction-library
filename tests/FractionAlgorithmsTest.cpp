@@ -86,7 +86,8 @@ TEST(OperatorEqual, Minus1ByMinus2And1By2ShouldBeEqual)
 
 TEST(getWithReducedSign, ReducedMinus1ByMinus2ShouldBeEqualTo1By2)
 {
-    EXPECT_EQ(getWithReducedSign(Fraction(-1, -2)), Fraction(1, 2));
+    EXPECT_EQ(Fraction(1, 2), getWithReducedSign(Fraction(-1, -2)));
+}
 }
 
 TEST(getReduced, ReducedMinus1ByMinus2ShouldBeEqualTo1By2)
