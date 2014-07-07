@@ -103,3 +103,8 @@ TEST(OperatorMinus, 1By2Minus1By4ShouldBeEqualTo1By4)
 {
     EXPECT_EQ(Fraction(1, 4), Fraction(1, 2) - Fraction(1, 4));
 }
+
+TEST(defineCommonDenominator, 5And10ShouldReturn5)
+{
+    EXPECT_EQ(5, defineCommonDenominator(5, 10));
+}
