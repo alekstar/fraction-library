@@ -88,6 +88,10 @@ TEST(getWithReducedSign, ReducedMinus1ByMinus2ShouldBeEqualTo1By2)
 {
     EXPECT_EQ(Fraction(1, 2), getWithReducedSign(Fraction(-1, -2)));
 }
+
+TEST(getWithReducedSign, Reduced1By2ShouldBeEqualTo1By2)
+{
+    EXPECT_EQ(Fraction(1, 2), getWithReducedSign(Fraction(1, 2)));
 }
 
 TEST(getReduced, ReducedMinus1ByMinus2ShouldBeEqualTo1By2)
