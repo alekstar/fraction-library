@@ -48,8 +48,9 @@ namespace FractionLibrary
         return false;
     }
     
-    const fraction_type defineCommonDenominator(const fraction_type operand1,
-                                                const fraction_type operand2)
+    const fraction_type defineGreatestCommonDivisor(
+        const fraction_type operand1,
+        const fraction_type operand2)
     {
         fraction_type number1 = std::abs(operand1);
         fraction_type number2 = std::abs(operand2);
@@ -72,8 +73,8 @@ namespace FractionLibrary
     const Fraction getReduced(const Fraction& fraction)
     {
         int common_denominator = 
-            defineCommonDenominator(fraction.getNumerator(), 
-                                    fraction.getDenominator());
+            defineGreatestCommonDivisor(fraction.getNumerator(), 
+                                        fraction.getDenominator());
         return getWithReducedSign(
             Fraction(fraction.getNumerator() / common_denominator,
                      fraction.getDenominator() / common_denominator));
