@@ -143,3 +143,8 @@ TEST(operatorStar, 1by2And1by2ShouldBeEqualTo1By4)
 {
     EXPECT_EQ(Fraction(1, 4), Fraction(1, 2) * Fraction(1, 2));
 }
+
+TEST(operatorStar, Minus1by2And1by2ShouldBeEqualToMinus1By4)
+{
+    EXPECT_EQ(Fraction(-1, 4), Fraction(-1, 2) * Fraction(1, 2));
+}
