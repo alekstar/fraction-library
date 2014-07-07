@@ -48,6 +48,12 @@ namespace FractionLibrary
         return false;
     }
     
+    const bool operator!=(const Fraction& left_operand, 
+                          const Fraction& right_operand)
+    {
+        return !(left_operand == right_operand);
+    }
+    
     const fraction_type defineGreatestCommonDivisor(
         const fraction_type operand1,
         const fraction_type operand2)
